@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery of Webpage</title>
+        <link rel="stylesheet" href="../My Website/CSS/gallary_style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <div class="container">
+                <img src="logo/logo5.png" alt="logo">
+                <div class="menu-btn"></div>
+                <div class="navigation">
+                    <div class="navigation-items">
+                        <a href="../My Website/index_main_pg.html">Home</a>
+                        <a href="../My Website/about.html">About</a>
+                        <a href="../My Website/explore.html">Explore</a>
+                        <a href="../My Website/gallary.html">Gallary</a>
+                        <a href="../My Website/contact_us.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <h1><strong>Gallary</strong></h1>
+            <p></p>
+        </section>
+        
+        <section class="gallery">
+            <div class="full-img" id="fullimgbox">
+                <img src="Images/i1.jpg" id="fullimg">
+                <span onclick="closefullimg()">X</span>
+            </div>
+            <h2><i>Mumbai</i></h2>
+            <div class="img-gallery">
+                <img src="Images/Mumbai/m1.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Mumbai/m2.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Mumbai/m10.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Mumbai/m4.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Mumbai/m5.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Mumbai/m6.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Mumbai/m7.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Mumbai/m8.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Mumbai/m9.jpg" onclick="openfullimg(this.src)">
+            </div>
+            
+            <h2><i>Nagpur</i></h2>
+            <div class="img-gallery">
+                <img src="Images/Aurangabad/aur4.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Aurangabad/aur2.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Aurangabad/a7.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Aurangabad/a3.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Aurangabad/aug5.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Aurangabad/a.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Aurangabad/a6.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Aurangabad/Aur1.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Aurangabad/a8.jpg" onclick="openfullimg(this.src)">
+            </div>
+
+            <h2><i>Pune</i></h2>
+            <div class="img-gallery">
+                <img src="Images/Pune/p10.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Pune/p2.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Pune/p3.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Pune/p4.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Pune/p5.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Pune/p6.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Pune/p7.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Pune/p8.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Pune/p9.jpg" onclick="openfullimg(this.src)">
+            </div>
+
+            <h2><i>Nashik</i></h2>
+            <div class="img-gallery">
+                <img src="Images/Nashik/n.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Nashik/n10.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Nashik/n2.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Nashik/n3.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Nashik/n4.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Nashik/n5.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Nashik/n9.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Nashik/n6.jpg" onclick="openfullimg(this.src)">
+                <img src="Images/Nashik/n7.jpg" onclick="openfullimg(this.src)">
+            </div>
+
+        </section>
+
+        <script>
+            var fullimgbox = document.getElementById("fullimgbox");
+            var fullimg = document.getElementById("fullimg");
+
+            function openfullimg(pic){
+                fullimgbox.style.display = "flex";
+                fullimg.src = pic;
+            }
+            function closefullimg(){
+                fullimgbox.style.display = "none"; 
+            }
+        </script>
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="logo/logo5.png" alt="facebook" class="footer-logo">
+                        <p>5 hill stations in Maharashtra to get away to. 
+                            Through the length of its state, Maharashtra 
+                            encompasses a landscape ranging from the steeply 
+                            rising Western Ghats, all the way down to the seashore 
+                            of the Arabian Sea.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Features</h4>
+                        <p>Deals & Offers</p>
+                        <p>Customer Reviews</p>
+                        <p>Cancelation Policy</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Quick Contact</h4>
+                        <p><i class="fa fa-phone-square"></i> +91 7300382044</p>
+                        <p><i class="fa fa-envelope"></i> palsoumyanil1@gmail.com</p>
+                        <p><i class="fa fa-home"></i> Nagpur, Maharashtra</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Follow Us On</h4>
+                        <p><i class="fa fa-facebook-official"></i> Facebook</p>
+                        <p><i class="fa fa-youtube-play"></i> Youtube</p>
+                        <p><i class="fa fa-twitter"></i> Twitter</p>
+                    </div>
+                </div><hr>
+                <p class="copyright"> Made With<i class="fa fa-heart"></i>By Soumyanil, Nikhil</p>
+            </div>
+        </section>
+    </body>
+</html>

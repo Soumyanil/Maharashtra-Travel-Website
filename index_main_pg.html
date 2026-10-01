@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index Page</title>
+        <link rel="stylesheet" href="CSS/index_pg2_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="brand">Travel</a>
+            <div class="menu-btn"></div>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="../My Website/index_main_pg.html">Home</a>
+                    <a href="../My Website/about.html">About Us</a>
+                    <a href="../My Website/explore.html">Explore</a>
+                    <a href="../My Website/gallary.html">Gallary</a>
+                    <a href="../My Website/contact_us.html">Contact Us</a>
+                </div>
+            </div>
+        </header>
+        <section class="home">
+
+            <video class="video-slide" src="../My Website/Vedios/Beauty_of_Maharashtra.mp4" autoplay muted loop></video>
+            
+            <div class="content">
+                <h1>PLAN YOUR TRIP<br><span>To Maharashtra</span></h1>
+                <h3>Subscribe To your Happiness</h3>
+                <p>The name Maharashtra first appeared in the 7th century in the 
+                    account of a contemporary Chinese traveler, Huan Tsang. 
+                    In the early modern period, the region of Maharashtra came 
+                    under the rule of several Islamic dynasties, including the Deccan 
+                    Sultanates and Mughal Empire.</p>
+                <a href="../My Website/explore.html" target="_blank">Read More</a>
+            </div>
+            <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+        </section>
+        <script type="text/javascript">
+            //javascript of responsive navigation menu
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector("navigation");
+
+            menuBtn.addEventListener("click",() => {
+                menuBtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+            });
+
+            //javascript for vedio slider navigation
+            const btns = document.querySelectorAll(".nav-btn");
+
+           
+        </script>
+    </body>
+</html>
